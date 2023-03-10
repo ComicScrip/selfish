@@ -1,5 +1,6 @@
 import './globals.css';
 import React from 'react';
+import QueryProvider from './contexts/QueryProvider';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className=" bg-zinc-900">{children}</body>
+      <body className=" bg-zinc-900">
+        <QueryProvider>{children}</QueryProvider>
+      </body>
     </html>
   );
 }

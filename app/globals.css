@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.uploadcare--widget__button_type_open {
+  -webkit-appearance: button; /* 1 */
+  background-color: #157cfc; /* 2 */
+  background-image: none; /* 2 */
+}
+
+.uploadcare--button_primary {
+    background: #157cfc;
+    border-color: #157cfc;
+    color: #fff;
+}
+
+.uploadcare--dialog__close {
+    outline: none;
+}

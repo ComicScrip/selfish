@@ -14,7 +14,7 @@ export default function PictureUploader() {
       {show && (
         <Widget
           publicKey={process.env.NEXT_PUBLIC_UPLOADCARE_KEY ?? ''}
-          tabs="file url camera"
+          tabs="camera file url"
           crop="3:4"
           onChange={async ({ cdnUrl }) => {
             console.log({ cdnUrl });
